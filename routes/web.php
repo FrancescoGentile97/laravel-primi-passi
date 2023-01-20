@@ -13,11 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get("/home", function () {
+Route::get("/", function () {
     return view("home");
+})->name("home");
 
-});
+Route::get("/contatti", function () {
+    $array = ["Aiuto", "Chat live", "Supporto"];
+    return view("contatti",[
+        "array" => $array,
+    ]);
+})->name("contatti");

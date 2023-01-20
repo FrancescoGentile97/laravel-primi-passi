@@ -11,12 +11,19 @@
 <body>
     <div class="container p-2">
         <div class="text-center">
-            <h1>Benvenuto nella Home</h1>
+            <h1>Benvenuto nella sezione Contattaci</h1>
         </div>
         <div class="d-flex justify-content-between">
             <a href="">Info</a>
-            <a href="{{route("contatti")}}">Contatti</a>
+            <a href="{{route("home")}}">home</a>
         </div>
+    </div>
+    <div>
+        <ul class="d-flex list-unstyled justify-content-between">
+            @foreach ($array as $contatto)
+            <li><a href="">{{$contatto}}</a></li>
+            @endforeach
+        </ul>
     </div>
     
 </body>
