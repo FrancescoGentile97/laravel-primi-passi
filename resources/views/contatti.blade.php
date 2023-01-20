@@ -14,7 +14,7 @@
             <h1>Benvenuto nella sezione Contattaci</h1>
         </div>
         <div class="d-flex justify-content-between">
-            <a href="">Info</a>
+            <a href="{{route("info")}}">Info</a>
             <a href="{{route("home")}}">home</a>
         </div>
     </div>

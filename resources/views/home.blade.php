@@ -14,7 +14,7 @@
             <h1>Benvenuto nella Home</h1>
         </div>
         <div class="d-flex justify-content-between">
-            <a href="">Info</a>
+            <a href="{{route("info")}}">Info</a>
             <a href="{{route("contatti")}}">Contatti</a>
         </div>
     </div>

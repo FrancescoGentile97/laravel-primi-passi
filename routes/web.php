@@ -13,14 +13,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
+// route della home
 Route::get("/", function () {
     return view("home");
 })->name("home");
-
+// route dei contatti
 Route::get("/contatti", function () {
     $array = ["Aiuto", "Chat live", "Supporto"];
     return view("contatti",[
         "array" => $array,
     ]);
 })->name("contatti");
+// route delle info
+Route::get("/info", function () {
+    $array = ["Chi Siamo", "Social", "email"];
+    return view("info",[
+        "array" => $array,
+    ]);
+})->name("info");
